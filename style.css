@@ -130,6 +130,7 @@ font-weight: 400;
         .detaily hr {
             height: 0.5px; /*jak udelat tu caru uzsi, kdyz se nezmensi pri zadani mensich hodnot?*/
             border-color: #06d7c1; /*cara je zmetek a jde obarvit jen pomoci border color, ne color, logika super*/
+            background-color: #06d7c1;
             margin: 30px 0px 30px 0px
             
         }
