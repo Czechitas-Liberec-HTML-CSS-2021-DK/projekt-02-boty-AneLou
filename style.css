@@ -35,7 +35,6 @@ body {
 background-color: #f5f5f5; /*svedle sede pozadi*/
 margin: 30px;
 width: 50%;
-position: center;
 font-family: mujfont;
 font-size: 14px;
 font-weight: 400;
@@ -49,14 +48,8 @@ font-weight: 400;
     border-radius: 30px;
 }
 
-/*.zbozi div {
-    display:inline-block
-}*/
-
-
-
 .vizual {
-    position:absolute;
+    position: absolute;
     width: 335px; /*sirka zelenyho tentononcu*/
     height: 440px; /*vyska zelenyho tentononcu*/
     border-radius: 10px 0px 0px 10px; /*oble rohy*/
@@ -64,40 +57,40 @@ font-weight: 400;
     padding: 30px; /*vnitrni vycpavka*/
 }
 
-.slogan {
-    color: white;
-    font-weight: 500;
-    font-size: 15px;
-    position: relative;
-    bottom: -15px;
-}
+        .slogan {
+            color: white;
+            font-weight: 500; /*zadani bylo 500, se 600 to vypada vic jak predloha*/
+            font-size: 16px;
+            position: relative;
+            bottom: -15px;
+        }
 
-.bota img {
-    position: relative;
-    z-index: 1;
-    left: -115px;
-    bottom: -20px;
-}
+        .bota img {
+            position: relative;
+            z-index: 1;
+            left: -115px;
+            bottom: -15px;
+        }
 
-.cenovka {
-    position: relative;
-    top: -50px;
-}
+        .cenovka {
+            position: relative;
+            top: -50px;
+        }
 
-.cena {
-    color: white;
-    font-size: 28px;
-    font-weight: 500;
-    position: relative;
-    left: 175px;
-}
+        .cena {
+            color: white;
+            font-size: 28px;
+            font-weight: 500; /*500 mi prijde bold, cokoliv vic, je zas hnus, nejhezci vysledek asi s "bold"*/
+            position: relative;
+            left: 175px;
+        }
 
-.zaruka {
-    color: white;
-    font-size: 12px;
-    position: relative;
-    left: 135px;
-}
+        .zaruka {
+            color: white;
+            font-size: 12px;
+            position: relative;
+            left: 135px;
+        }
 
 
 
@@ -115,6 +108,72 @@ font-weight: 400;
     left: 435px;  /*tohle by melo jit udelat display inline ve zbozi, ale jak????*/
 }
 
-.nazev {
-    font-size: 20px;
-}
+        .nazev {
+            font-size: 20px;
+            color: black;
+            font-weight: 500 bold;
+            text-transform: uppercase; /*proc nefunguje?????*/
+            margin-top: -1px;
+        }
+
+        .produkt {
+            color: #959595;
+            font-size: 14px;
+            font-weight: 400;
+            margin-top: -5px;
+        }
+
+        .popis {
+            margin-top: 20px;
+        }
+
+        .detaily hr {
+            height: 0.5px; /*jak udelat tu caru uzsi, kdyz se nezmensi pri zadani mensich hodnot?*/
+            border-color: #06d7c1; /*cara je zmetek a jde obarvit jen pomoci border color, ne color, logika super*/
+            margin: 30px 0px 30px 0px
+            
+        }
+
+        .parametr {
+            text-transform: uppercase;
+            font-size: 14px; /*cim to, ze se mi nereplikovala font size z body? to dela to hr?*/
+            font-weight: bold;
+        }
+
+        li {
+            display: inline;
+            position: relative;
+            left: -35px;
+            margin: 8px;
+        }
+
+            .vybrana {
+                color: #f15f42;
+                border: 1px;
+                padding: 4px;
+                border-style: solid;
+                border-radius: 50%;
+                border-color: #f15f42;
+                font-weight: bold;
+            }
+
+
+        .akce {
+            width: 130px;
+            height: 40px;
+            border-radius: 5px;
+            background-color: #f15f42;
+            position: relative;
+            bottom: -80px;
+        }
+        .tlacitko {
+            text-transform: uppercase;
+            color: white;
+            position: absolute;
+            left: 30px;
+            top: 12px;
+        }
+
+        a {
+            text-decoration: none; /*odenda podtrzeni u linku*/
+        }
