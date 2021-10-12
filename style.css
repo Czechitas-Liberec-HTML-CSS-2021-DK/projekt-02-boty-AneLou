@@ -25,18 +25,26 @@ body {
 */
 
 /* ----- zde zacni psat vlastni css ----- */
+
+@font-face {
+    font-family: mujfont; /* deklarace fontu */
+    src: url("Rubik-VariableFont_wght.ttf"); /* propojení na umístění souboru */
+}
+
 body {
 background-color: #f5f5f5; /*svedle sede pozadi*/
 margin: 30px;
 width: 50%;
 position: center;
+font-family: mujfont;
+font-size: 14px;
+font-weight: 400;
 }
 
 .zbozi {
     width: 670px; /*sirka celeho*/ /*OK*/
     height: 440px; /*vyska celeho*/ /*OK*/
     margin-left: 100px;
-
     position: absolute;
     border-radius: 30px;
 }
@@ -48,14 +56,20 @@ position: center;
 
 
 .vizual {
-
     position:absolute;
     width: 335px; /*sirka zelenyho tentononcu*/
     height: 440px; /*vyska zelenyho tentononcu*/
-    border-radius: 20px 0px 0px 20px; /*oble rohy*/
+    border-radius: 10px 0px 0px 10px; /*oble rohy*/
     background: linear-gradient(#06d7c1, #50cc49); /*pozadi gradient*/
     padding: 30px; /*vnitrni vycpavka*/
+}
 
+.slogan {
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+    position: relative;
+    bottom: -15px;
 }
 
 .bota img {
@@ -65,10 +79,32 @@ position: center;
     bottom: -20px;
 }
 
+.cenovka {
+    position: relative;
+    top: -50px;
+}
+
+.cena {
+    color: white;
+    font-size: 28px;
+    font-weight: 500;
+    position: relative;
+    left: 175px;
+}
+
+.zaruka {
+    color: white;
+    font-size: 12px;
+    position: relative;
+    left: 135px;
+}
+
+
+
 
 .detaily {
     background-color: white; /*OK*/
-    border-radius: 0px 20px 20px 0px; /*oble rohy*//*OK*/
+    border-radius: 0px 10px 10px 0px; /*oble rohy*//*OK*/
     position: absolute;
     width: 335px;
     height: 440px;
